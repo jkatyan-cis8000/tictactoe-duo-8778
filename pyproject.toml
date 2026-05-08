@@ -1,0 +1,17 @@
+[project]
+name = "tictactoe-duo-8778"
+version = "0.1.0"
+description = "A user-friendly, two-player Tic-Tac-Toe game"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+tictactoe = "src.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
